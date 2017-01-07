@@ -14,8 +14,8 @@ mongoose.connect('mongodb://vishalgcogni:river808@ds127988.mlab.com:27988/booksa
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-var bookModel = require('./src/models/bookModel')
-var bookRouter = require('./src/Routes/bookRoutes')(bookModel);
+var bookModel = require('./src/models/bookModel');
+var bookRouter = require('./src/routes/bookRoutes')(bookModel);
 
 // creating a admin router
 var adminRouter = require('./src/routes/adminRoutes')();
