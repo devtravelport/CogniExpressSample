@@ -8,6 +8,10 @@
     "start": "node app.js"
   },
   "author": "",
+  "engines": {
+    "node": "5.8.0",
+    "npm": "3.7.3"
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
